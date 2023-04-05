@@ -9,7 +9,7 @@ function genScram()
         s += "("
         var randNum = Math.floor(Math.random() * 12) - 5;
         s += randNum;
-        s += ", ";
+        s += ",";
         var randNum2 = Math.floor(Math.random() * 12) - 5;
         s += randNum2;
         s += ") ";

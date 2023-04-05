@@ -2,7 +2,11 @@
 <head>
     <title>Simultaneous Scrambles</title>
     <style>
-        h1
+        body
+        {
+            align-items: center;
+        }
+        h2
         {
             text-align: center;
         }
@@ -10,15 +14,34 @@
         {
             border: 2px solid navy;
         }
+        button
+        {
+            padding: auto;
+            margin: auto;
+            border: none;
+            background-color: #FFFFFF;
+            color: navy;
+            cursor: pointer;
+        }
+        #scram_box
+        {
+            border: 2 px solid navy;
+            background-color: lightgray;
+            width: 1000px;
+        }
+        
     </style>
 </head>
 <body>
     <h1>Awesome Clock Scrambles</h1>
-    <button onclick="genScram()">Generate</button>
-    <div id="scram">
-        <h1>
-            Empty
-        </h1>
+    <div id="scram_box">
+
+        <button onclick="genScram()">Generate</button>
+        <div>
+            <h2 id="scram">placeholder text to avoid bar collapse-fix w/ js later
+            </h1>
+        </div>
     </div>
+
     <script src="simulScram.js"></script>
 </body>
